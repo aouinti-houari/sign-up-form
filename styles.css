@@ -1,0 +1,262 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Edu+TAS+Beginner:wght@500&display=swap");
+
+/* CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  font-family: "Edu TAS Beginner";
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.picture {
+  position: relative;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 40%;
+  height: 100%;
+}
+
+.logo {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  font-size: 45px;
+  text-align: center;
+  background-color: rgba(10, 105, 163, 50%);
+  color: #fff;
+  font-family: "Agbalumo";
+}
+
+svg {
+  fill: #ffffff;
+  font-size: 70px;
+}
+
+.right {
+  width: 60%;
+}
+
+.plain-text {
+  font-size: 1.8rem;
+  padding: 50px;
+  height: 15vh;
+  background-color: whitesmoke;
+}
+
+h1 {
+  font-size: xx-large;
+  font-weight: bolder;
+  margin: 2.5rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  height: 30vh;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+form div {
+  margin-left: 2.5rem;
+  display: grid;
+}
+
+form input {
+  outline: none;
+  border: none;
+  width: 400px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+form input:focus {
+  margin-top: 30px;
+  border-bottom: 2px solid lightskyblue;
+}
+
+form input:invalid {
+  border-bottom: 2px solid red;
+}
+
+.password-match {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.login-box {
+  text-align: center;
+  background-color: whitesmoke;
+  margin-top: 80px;
+  height: 21.38vh;
+}
+
+.login-box button {
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  width: 300px;
+  padding: 20px;
+  border: none;
+  background-color: rgb(10, 105, 163);
+  color: white;
+}
+
+.login-box button:hover {
+  background-color: lightskyblue;
+}
+
+.login-box p {
+  font-size: x-large;
+}
+
+.login-box span a {
+  text-decoration: none;
+  color: rgb(10, 105, 163);
+}
+
+.login-box span a:hover {
+  text-decoration: underline solid lightskyblue 1px;
+  color: lightskyblue;
+}
