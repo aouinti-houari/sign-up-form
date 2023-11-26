@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -30,13 +30,7 @@
       </div>
       <div class="right">
         <div class="plain-text">
-          <p>This is not a real online service!</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus
-            error iste soluta ratione similique nostrum quae sint odio corporis
-            nulla ullam saepe obcaecati aperiam enim harum amet, est debitis
-            quasi?
-          </p>
+          Already have and account? <span><a href="#">Log in</a></span>
         </div>
         <h1>Sign up</h1>
         <form action="#" method="post">
@@ -49,25 +43,28 @@
               placeholder="John"
               required
             />
+            <span></span>
           </div>
           <div>
             <label for="last-name">LAST NAME</label>
             <input
-              type="tel"
+              type="text"
               name="last-name"
               pattern="[A-Za-z]+([ '-][A-Za-z]+)*"
-              required
               placeholder="Doe"
+              required
             />
+            <span></span>
           </div>
           <div>
             <label for="email">EMAIL</label>
             <input
               type="mail"
               name="email"
-              required
               placeholder="johndoe@mail.com"
+              required
             />
+            <span></span>
           </div>
           <div>
             <label for="phone-number">PHONE NUMBER</label>
@@ -79,6 +76,7 @@
               title="Phone number must be in the format: 123-456-7890 or (123) 456-7890"
               required
             />
+            <span></span>
           </div>
           <div>
             <label for="password">PASSWORD</label>
@@ -91,26 +89,55 @@
               data-password
               required
             />
+            <span></span>
           </div>
           <div>
             <label for="confirm">CONFIRM PASSWORD</label>
             <input
               type="password"
               name="confirm"
-              required
               data-password-confirm
+              required
             />
+            <span></span>
           </div>
-          <span class="password-match" data-match></span>
+          <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country" required>
+              <option value="USA">United States</option>
+              <option value="CAN">Canada</option>
+              <option value="GBR">United Kingdom</option>
+              <option value="AUS">Australia</option>
+              <option value="DEU">Germany</option>
+              <option value="FRA">France</option>
+              <option value="JPN">Japan</option>
+              <option value="BRA">Brazil</option>
+              <option value="IND">India</option>
+              <option value="CHN">China</option>
+            </select>
+            <span></span>
+          </div>
+          <div>
+            <label for="zip">ZIP Code:</label>
+            <input
+              type="text"
+              id="zip"
+              name="zip"
+              pattern="\d{5}(-\d{4})?"
+              title="Enter a 5-digit ZIP code or a 9-digit ZIP+4 code"
+              required
+            />
+            <span></span>
+          </div>
+          <div class="password-match">
+            <span data-match></span>
+          </div>
+          <div class="login-box">
+            <button type="submit" data-submit>Create Account</button>
+          </div>
         </form>
-        <div class="login-box">
-          <button type="submit" data-submit>Create Account</button>
-          <p>
-            Already have and account? <span><a href="#">Log in</a></span>
-          </p>
-        </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

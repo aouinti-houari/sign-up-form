@@ -142,7 +142,7 @@ table {
 
 .picture {
   position: relative;
-  background-image: url("images/background.jpg");
+  background-image: url("./images/background.jpg");
   background-size: cover;
   background-position: center;
   width: 40%;
@@ -172,9 +172,9 @@ svg {
 }
 
 .plain-text {
-  font-size: 1.8rem;
-  padding: 50px;
-  height: 15vh;
+  font-size: 1.3rem;
+  padding: 20px;
+  height: 5vh;
   background-color: whitesmoke;
 }
 
@@ -187,9 +187,9 @@ h1 {
 form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
   gap: 30px;
-  height: 30vh;
+  height: 45vh;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -217,27 +217,31 @@ form input:invalid {
 }
 
 .password-match {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -50px;
   color: red;
   font-size: 1.5rem;
-  text-align: center;
 }
 
 .login-box {
+  grid-area: span 1 / span 2;
+  margin-left: 0;
   text-align: center;
   background-color: whitesmoke;
-  margin-top: 80px;
-  height: 21.38vh;
+  margin-top: 60px;
+  height: 20vh;
 }
 
 .login-box button {
   cursor: pointer;
   font-size: x-large;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 10px;
   border-radius: 25px;
+  margin: 50px auto;
   width: 300px;
-  padding: 20px;
+  height: 100px;
+  padding: 10px;
   border: none;
   background-color: rgb(10, 105, 163);
   color: white;
